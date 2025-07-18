@@ -1,5 +1,6 @@
 
 import sudoku
+import time
 
 def main() -> None:
     """
@@ -13,7 +14,11 @@ def main() -> None:
         row = input(f"Enter row {i+1}: ").strip()
         puzzle.append([int(digit) for digit in row])
     sudoku.dump_board(puzzle)
+
+    start_time = time.time()
     sudoku.print_solved_sudoku(puzzle)
+    end_time = time.time()
+    print(f"Solved in {end_time - start_time:.2f} seconds.")
 
 if __name__ == "__main__":
     main()
