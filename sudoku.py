@@ -1,3 +1,8 @@
+
+"""
+This module provides a sudoku SAT solver for finding one solution to a given sudoku puzzle.
+"""
+
 # The canonical representation of the sudoku game board is a list of lists
 # representing each row in the board. Each entry is 0 if blank and the
 # number if a number is known to be filled in.

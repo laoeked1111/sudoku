@@ -1,6 +1,11 @@
 
-import sudoku
+"""
+Entry point.
+"""
+
 import time
+import sudoku
+import ui
 
 def main() -> None:
     """
