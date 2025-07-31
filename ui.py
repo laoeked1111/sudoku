@@ -1,4 +1,8 @@
 
+"""
+Module for displaying sudoku board in tkinter window.
+"""
+
 import tkinter as tk
 
 def disp_board_window(canonical: list[list[int]]) -> None:
